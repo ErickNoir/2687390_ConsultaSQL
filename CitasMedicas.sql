@@ -82,7 +82,7 @@ FOREIGN key (Cita_FK) REFERENCES Cita (ID_cita)
 
 --Insertar datos dentro de las tablas--
 
-INSERT INTO `rol` (`IdRol`, `Rol`) VALUES
+INSERT INTO `rol` (`IdRol`, `NombreRol`) VALUES
 (1, 'Doctor'),
 (2, 'Paciente');
 
@@ -108,7 +108,7 @@ INSERT INTO `usuario` (`ID_usu`, `Nombre`, `IDRol_Fk`) VALUES
 (19, 'Usuario19', 2),
 (20, 'Usuario20', 2);
 
-INSERT INTO `horario` (`ID_hora`, `Fecha_hora`, `Hora`) VALUES
+INSERT INTO `horario` (`ID_hora`, `Fecha_hora`, `Hora_hora`) VALUES
 (1, '2023-04-26', '2023-04-26'),
 (2, '2023-04-04', '2023-04-04'),
 (3, '2023-04-01', '2023-04-01'),
@@ -120,7 +120,7 @@ INSERT INTO `horario` (`ID_hora`, `Fecha_hora`, `Hora`) VALUES
 (9, '2023-04-12', '2023-04-12'),
 (10, '2023-04-21', '2023-04-26');
 
-INSERT INTO `clinica` (`ID_clinica`, `Direccion_FK`, `Nombre_clin`, `Localidad_clin`) VALUES
+INSERT INTO `clinica` (`ID_clinica`, `Direccion_clin`, `Nombre_clin`, `Localidad_clin`) VALUES
 (1, 'Direccion1', 'Nombre1', 'Localidad1'),
 (2, 'Direccion2', 'Nombre2', 'Localidad2'),
 (3, 'Direccion3', 'Nombre3', 'Localidad3'),
@@ -132,7 +132,7 @@ INSERT INTO `clinica` (`ID_clinica`, `Direccion_FK`, `Nombre_clin`, `Localidad_c
 (9, 'Direccion9', 'Nombre9', 'Localidad9'),
 (10, 'Direccion10', 'Nombre10', 'Localidad10');
 
-INSERT INTO `paciente` (`ID_paci`, `Nombre_paci`, `ApellidoPaci`, `FechaNacimiento_paci`, `Telefono_paci`, `Email_paci`, `TipoID_paci`, `IDusu_FK`) VALUES
+INSERT INTO `paciente` (`ID_paci`, `NombrePaci`, `ApellidoPaci`, `FechaNacimiento_paci`, `Telefono_paci`, `Email_paci`, `TipoID_paci`, `IDusu_FK`) VALUES
 (498496, 'Nombre1', 'Apellido1', '2013-05-22', 1613134, 'correo1@gmail.com', 'TI', 11),
 (3158461, 'Nombre6', 'Apellido6', '1993-01-06', 316461984, 'correo6@gmail.com', 'CC', 16),
 (5468468, 'Nombre4', 'Apellido4', '1994-08-03', 364680845, 'correo4@gmail.com', 'CC', 14),
@@ -144,7 +144,7 @@ INSERT INTO `paciente` (`ID_paci`, `Nombre_paci`, `ApellidoPaci`, `FechaNacimien
 (348948534, 'Nombre7', 'Apellido7', '1995-09-20', 314981894, 'correo7@gmail.com', 'CC', 17),
 (889464165, 'Nombre3', 'Apellido3', '2014-04-09', 318463168, 'correo3@gmail.com', 'TI', 13);
 
-INSERT INTO `doctor` (`ID_doc`, `Nombre_doc`, `Apellido_doc`, `Telefono_doc`, `TipoDI_doc`, `IDusu_FK`, `IDhora_FK`, `IDClinica_FK`) VALUES
+INSERT INTO `doctor` (`ID_doc`, `Nombre_doc`, `Apellido_doc`, `Telefono`, `TipoDI_doc`, `IDusu_FK`, `IDhora_FK`, `IDClinica_FK`) VALUES
 (1, 'Nombre1', 'Apellido1', '3148468', 'CC', 1, 1, 1),
 (2, 'Nombre2', 'Apellido2', '346841676', 'CC', 2, 2, 2),
 (3, 'Nombre3', 'Apellido4', '16413463', 'CC', 3, 3, 3),
