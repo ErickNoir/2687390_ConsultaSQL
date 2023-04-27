@@ -2,7 +2,7 @@
 CREATE DATABASE AgendamientoCitas;  
 
 --Creación de las tablas--
-CCREATE TABLE Rol ( 
+CREATE TABLE Rol ( 
 IdRol int (11) PRIMARY KEY AUTO_INCREMENT NOT null, 
 NombreRol char (20)
 );
